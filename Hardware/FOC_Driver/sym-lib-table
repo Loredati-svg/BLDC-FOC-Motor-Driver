@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "DRV8323RHRGZR") (type "KiCad") (uri "${KIPRJMOD}/../../Lib/DRV8323RHRGZR/DRV8323RHRGZR.kicad_sym") (options "") (descr ""))
+)
