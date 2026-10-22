@@ -7388,7 +7388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 255.778 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -7469,7 +7469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 215.138 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -8509,7 +8509,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 235.458 124.46 90)
 			(hide yes)
 			(show_name no)
