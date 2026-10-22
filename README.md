@@ -10,6 +10,28 @@
 Single-motor **BLDC / PMSM driver with Field-Oriented Control (FOC)**.
 It's the motor-control building block for a two-wheeled self-balancing robot. It's also designed to work as a standalone driver on the bench, commanded over USB.
 
+## Libraries
+
+This project uses the shared KiCad libraries from L2-Hardware.
+
+1. Clone the library repository **in the same parent folder as your project folders**, so that it sits next to them:
+
+```bash
+   git clone https://github.com/L2-Hardware/Kicad_Libs
+```
+
+   Expected folder structure:
+
+```
+   Kicad/
+   ├── Kicad_Libs/
+   ├── Project1/
+   └── Project2/
+   └── etc...
+```
+
+2. Inside the project folder, run the `bring_libs.bat` script to import the libraries into the project.
+
 ## Key specs
 
 | | |
@@ -33,13 +55,7 @@ It's the motor-control building block for a two-wheeled self-balancing robot. It
 | Encoder | ams AS5047P + diametral magnet |
 | Protection | SMBJ26A TVS on VBAT, USBLC6-2SC6 ESD on USB, polyfuse + Schottky diode-OR on VBUS |
 
-## Repository structure
 
-```
-Hardware/FOC_Driver/   KiCad project (schematic, PCB)
-Lib/                   Project-specific symbols, footprints and 3D models
-Driver_BLDC_FOC_architettura.pdf   Architecture and component selection
-```
 
 ## Roadmap
 
