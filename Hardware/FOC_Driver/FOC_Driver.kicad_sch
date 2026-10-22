@@ -163,6 +163,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 85.09) (xy 86.36 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3be1dcb5-70a8-4c6f-b90d-09c4ac998eed")
+	)
+	(wire
+		(pts
 			(xy 205.74 57.15) (xy 219.71 57.15)
 		)
 		(stroke
@@ -243,6 +253,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 52.07) (xy 67.31 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6afdaccb-74a3-4859-8598-2636fca14443")
+	)
+	(wire
+		(pts
 			(xy 176.53 46.99) (xy 176.53 39.37)
 		)
 		(stroke
@@ -280,6 +300,16 @@
 			(type default)
 		)
 		(uuid "75013e34-3988-4231-8818-53a10f755a3a")
+	)
+	(wire
+		(pts
+			(xy 63.5 57.15) (xy 67.31 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77976ec8-766f-436e-b306-91428f205d2f")
 	)
 	(wire
 		(pts
@@ -390,6 +420,16 @@
 			(type default)
 		)
 		(uuid "d5725e98-4e30-49fe-a85a-cd4e70b790ce")
+	)
+	(wire
+		(pts
+			(xy 63.5 54.61) (xy 67.31 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d65bb97c-d71a-46f8-8e82-5e357e4b51fd")
 	)
 	(wire
 		(pts
@@ -2694,6 +2734,66 @@
 			"6UaooQjHAAAAAElFTkSuQmCC"
 		)
 	)
+	(label "SHC"
+		(at 67.31 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04df3dc7-79ad-4faf-ba1a-803c342d1fa9")
+	)
+	(label "SHA"
+		(at 67.31 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d838df4-611c-4aab-be09-b0c6d0af5874")
+	)
+	(label "SHA"
+		(at 212.09 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2416eac2-b937-41c1-91be-4a9306010668")
+	)
+	(label "SHC"
+		(at 212.09 72.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "33e95bc3-07d0-42a8-a470-b8b256e27ce8")
+	)
+	(label "SHB"
+		(at 67.31 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "97f0544e-00b4-43b0-b7bb-132c35760524")
+	)
+	(label "SHB"
+		(at 212.09 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "afcd84c4-1e6d-4af0-a08f-5966ba2fff15")
+	)
 	(sheet
 		(at 160.02 46.99)
 		(size 45.72 57.15)
@@ -3471,13 +3571,13 @@
 			)
 		)
 		(pin "VBAT_SENSE" input
-			(at 121.92 46.99 90)
+			(at 86.36 85.09 180)
 			(uuid "98eb4ffe-54a3-4080-bd1a-883c8dceb45c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "ENC_CS" output
@@ -3699,6 +3799,16 @@
 		(pin "VBAT(+)" bidirectional
 			(at 54.61 46.99 90)
 			(uuid "cb977da8-34ac-405d-9b11-0b1196b486b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBAT_SENSE" output
+			(at 63.5 85.09 0)
+			(uuid "918578ea-785f-4ba0-a83c-9c31d1ae6d29")
 			(effects
 				(font
 					(size 1.27 1.27)
