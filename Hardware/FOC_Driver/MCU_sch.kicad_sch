@@ -2735,6 +2735,14 @@
 		(uuid "a902e748-cca8-4e2a-b7d2-6eb7a2fb74d8")
 	)
 	(no_connect
+		(at 125.73 125.73)
+		(uuid "adb1d505-8afc-4a7a-83af-a8f2081ddfb3")
+	)
+	(no_connect
+		(at 125.73 128.27)
+		(uuid "b153f232-0b2b-4344-a616-c804dbe23533")
+	)
+	(no_connect
 		(at 130.81 133.35)
 		(uuid "b8b69860-b004-41bb-a81c-156e621129d4")
 	)
@@ -2982,7 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 130.81) (xy 105.41 133.35)
+			(xy 110.49 130.81) (xy 110.49 133.35)
 		)
 		(stroke
 			(width 0)
@@ -3122,7 +3130,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 130.81) (xy 105.41 130.81)
+			(xy 130.81 130.81) (xy 110.49 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3532,7 +3540,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 143.51) (xy 105.41 140.97)
+			(xy 110.49 143.51) (xy 110.49 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3908,17 +3916,6 @@
 		)
 		(uuid "3b1af672-614b-4b7e-99b9-67c9ed1700f7")
 	)
-	(hierarchical_label "UART_TX"
-		(shape output)
-		(at 125.73 125.73 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4bd990bc-db4b-449b-af1b-c4892d1092eb")
-	)
 	(hierarchical_label "ENC_MISO"
 		(shape input)
 		(at 171.45 87.63 0)
@@ -4051,17 +4048,6 @@
 		)
 		(uuid "d392a0af-e044-464a-9b5f-3268595f78cb")
 	)
-	(hierarchical_label "UART_RX"
-		(shape input)
-		(at 125.73 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d7e3d9c0-ecbd-4e16-b5aa-d0887a49dd0a")
-	)
 	(hierarchical_label "ENC_SCK"
 		(shape output)
 		(at 171.45 85.09 0)
@@ -4083,87 +4069,6 @@
 			(justify left)
 		)
 		(uuid "f0b5ec9f-930b-43db-bd18-5a9647f0ee3b")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 226.06 85.09 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0b21fd93-3d71-43ee-a243-47509a677744")
-		(property "Reference" "C31"
-			(at 225.044 82.804 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2n2"
-			(at 225.298 87.376 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 225.0948 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 226.06 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 226.06 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a5c41de-849a-444f-8278-26fd0c022111")
-		)
-		(pin "2"
-			(uuid "561d246e-01db-485a-9213-a60d6fcab46c")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C31")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -4199,7 +4104,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 114.808 102.87 90)
 			(hide yes)
 			(show_name no)
@@ -4280,7 +4185,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 217.17 73.152 90)
 			(hide yes)
 			(show_name no)
@@ -4323,6 +4228,87 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 120.65 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2581d350-2b68-4a0b-aa53-cc42b6e8aacd")
+		(property "Reference" "C40"
+			(at 118.364 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 118.364 62.992 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 119.6848 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100n,16V"
+			(at 120.65 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "66531cd8-3817-41ba-b230-398a82f4ed9e")
+		)
+		(pin "2"
+			(uuid "27faf5d8-7eed-4112-85e0-dc589edaf078")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -4564,6 +4550,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 226.06 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "34758bd8-343a-41c1-a113-3abdc531b532")
+		(property "Reference" "C31"
+			(at 225.298 83.058 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2n2"
+			(at 225.298 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 225.0948 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 226.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2n, C0G,16V"
+			(at 226.06 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ad6a2b9-b7d8-4375-99ab-5f2cfdf0a327")
+		)
+		(pin "2"
+			(uuid "fa706270-9559-41bf-99f9-608774211ef3")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 35.56 60.96 0)
 		(unit 1)
@@ -4642,89 +4709,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 91.44 99.06 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4dea3124-7143-45a6-8225-7b3e0881c657")
-		(property "Reference" "C28"
-			(at 89.154 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "15p"
-			(at 89.154 101.092 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 90.4748 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 91.44 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 91.44 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5adc1b4-8d25-477f-914e-78b0b6101d0b")
-		)
-		(pin "2"
-			(uuid "684f4a70-0590-40af-a9cc-38572dc37f21")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 105.41 137.16 0)
+		(at 110.49 137.16 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4736,7 +4722,7 @@
 		(fields_autoplaced yes)
 		(uuid "5346d908-138d-46d5-949c-b66180fc3db7")
 		(property "Reference" "R22"
-			(at 102.87 135.8899 0)
+			(at 107.95 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4747,7 +4733,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 102.87 138.4299 0)
+			(at 107.95 138.4299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4757,8 +4743,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 107.188 137.16 90)
+		(property "Footprint" "eResistor:0402"
+			(at 112.268 137.16 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4769,7 +4755,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 137.16 0)
+			(at 110.49 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4780,7 +4766,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 105.41 137.16 0)
+			(at 110.49 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4837,7 +4823,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 233.68 75.692 90)
 			(hide yes)
 			(show_name no)
@@ -4880,87 +4866,6 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 45.72 54.61 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6784b45e-533d-4044-a682-35cd80f83867")
-		(property "Reference" "C33"
-			(at 43.434 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 43.434 56.642 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 44.7548 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 45.72 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "464161e2-7947-4771-b0f8-c7a1a2cca3af")
-		)
-		(pin "2"
-			(uuid "04296b88-b6a8-478e-af16-2edd312b6781")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -5125,168 +5030,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 102.87 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70f77c8d-db00-46d9-aa08-a9d79da738a9")
-		(property "Reference" "C9"
-			(at 100.584 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 100.584 62.992 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.9048 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 102.87 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 102.87 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7f40cb61-d137-4865-beb0-aca242e74b6e")
-		)
-		(pin "2"
-			(uuid "d3b82228-be81-48b1-b6b6-c219cd06000f")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 111.76 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "73e9b99f-4c21-4f91-b75d-d8f67abc028d")
-		(property "Reference" "C25"
-			(at 109.474 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 109.474 62.992 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.7948 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 111.76 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b32f11a-c46b-4645-9490-ebc701ac779b")
-		)
-		(pin "2"
-			(uuid "d0ce96b2-3962-4a1c-903c-6f24ea5522e4")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 55.88 54.61 180)
 		(unit 1)
 		(body_style 1)
@@ -5318,7 +5061,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0603"
 			(at 54.9148 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -5340,7 +5083,7 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
+		(property "Description" "1u,16V"
 			(at 55.88 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -5400,7 +5143,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 102.108 102.87 90)
 			(hide yes)
 			(show_name no)
@@ -5450,87 +5193,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 208.28 85.09 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "770632ac-bf88-4dbf-960c-1a702a42fc10")
-		(property "Reference" "C30"
-			(at 207.772 83.058 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2n2"
-			(at 207.518 87.376 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.3148 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 208.28 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bbd60067-794e-469b-ac5e-d66f1b2d222a")
-		)
-		(pin "2"
-			(uuid "202d05f9-2f74-443d-b3a7-119ae8193af7")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C30")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 76.2 99.06 180)
 		(unit 1)
 		(body_style 1)
@@ -5551,7 +5213,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "12p"
 			(at 73.914 101.092 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5562,7 +5224,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 75.2348 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -5584,7 +5246,7 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
+		(property "Description" "12p, C0G"
 			(at 76.2 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -5612,7 +5274,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 143.51 0)
+		(at 110.49 143.51 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -5624,7 +5286,7 @@
 		(fields_autoplaced yes)
 		(uuid "79b070a4-f470-4f8b-bf2d-b0226f0d4f5a")
 		(property "Reference" "#PWR027"
-			(at 105.41 149.86 0)
+			(at 110.49 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5635,7 +5297,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 148.59 0)
+			(at 110.49 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5645,7 +5307,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 143.51 0)
+			(at 110.49 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5656,7 +5318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 143.51 0)
+			(at 110.49 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5667,7 +5329,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 143.51 0)
+			(at 110.49 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5722,7 +5384,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eLED:0805_pol"
 			(at 113.03 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5939,6 +5601,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 208.28 85.09 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a5d53787-13c9-4396-91e1-89b7b6f1bf3d")
+		(property "Reference" "C30"
+			(at 207.518 83.058 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2n2"
+			(at 207.518 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 207.3148 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2n, C0G,16V"
+			(at 208.28 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a9e2669-b572-44ef-a158-c6ecf22fc1d6")
+		)
+		(pin "2"
+			(uuid "069b3482-b1b5-4fc8-8b3d-ad7d2c502a03")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 83.82 104.14 0)
 		(unit 1)
@@ -6095,6 +5838,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 91.44 99.06 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad6e241d-a75f-4e3c-8e51-83ccf286cd01")
+		(property "Reference" "C28"
+			(at 89.154 96.52 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12p"
+			(at 89.154 101.092 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 90.4748 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "12p, C0G"
+			(at 91.44 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65eac448-f451-4b5f-ac15-26100d970d84")
+		)
+		(pin "2"
+			(uuid "8acd776f-5b1e-4ed7-b769-ea8e12aad683")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:FerriteBead")
 		(at 64.77 48.26 90)
 		(unit 1)
@@ -6126,7 +5950,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 64.77 50.038 90)
 			(hide yes)
 			(show_name no)
@@ -6175,6 +5999,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 45.72 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "af1f8cfd-6788-4288-bcf7-ba0b4774c93e")
+		(property "Reference" "C38"
+			(at 43.434 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 43.434 56.642 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 44.7548 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100n,16V"
+			(at 45.72 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c93e5898-5bd6-4785-ae5b-e0051e2a08b3")
+		)
+		(pin "2"
+			(uuid "41e81179-332b-4004-a006-143071b1f34e")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 200.66 72.39 90)
 		(mirror x)
@@ -6207,7 +6112,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 200.66 70.612 90)
 			(hide yes)
 			(show_name no)
@@ -6288,7 +6193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 190.8048 81.28 0)
 			(hide yes)
 			(show_name no)
@@ -6310,7 +6215,7 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
+		(property "Description" "2.2n, C0G,16V"
 			(at 191.77 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6409,6 +6314,168 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
 					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 62.23 86.36 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bde866c0-302d-47c4-b136-9e5e26a919e3")
+		(property "Reference" "C41"
+			(at 59.944 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 59.944 88.392 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 61.2648 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100n,16V"
+			(at 62.23 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b661f8d9-cdac-41af-8189-1a75764641f4")
+		)
+		(pin "2"
+			(uuid "02fd1e78-baa0-46ba-a93f-d5305636229c")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 35.56 54.61 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bec3bc7e-92cf-4378-b99e-b4fb87502f8b")
+		(property "Reference" "C33"
+			(at 33.274 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 33.274 56.642 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 34.5948 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100n,16V"
+			(at 35.56 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "67277954-a798-45ff-b1cd-f423188e0757")
+		)
+		(pin "2"
+			(uuid "c965827e-b7d7-4715-b422-26d3f25c8a14")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C33")
 					(unit 1)
 				)
 			)
@@ -6952,7 +7019,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 35.56 54.61 180)
+		(at 111.76 60.96 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6960,9 +7027,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "d30b2ae0-c95a-404d-bac3-9c94958f7a1d")
-		(property "Reference" "C38"
-			(at 33.274 52.07 0)
+		(uuid "d61ee727-d214-4bb7-a653-d938ed7acae0")
+		(property "Reference" "C39"
+			(at 109.474 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6973,7 +7040,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 33.274 56.642 0)
+			(at 109.474 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6983,8 +7050,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 34.5948 50.8 0)
+		(property "Footprint" "eCapacitor:0402"
+			(at 110.7948 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6995,7 +7062,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 54.61 0)
+			(at 111.76 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7005,8 +7072,8 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
-			(at 35.56 54.61 0)
+		(property "Description" "100n,16V"
+			(at 111.76 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7017,15 +7084,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "6672a403-c6b0-4987-8107-3b1f1f51c7ad")
+			(uuid "5698c885-173e-42b0-bd56-f3062f69a7ce")
 		)
 		(pin "2"
-			(uuid "81a84da8-a894-4700-9b19-a02655a491f9")
+			(uuid "fffe9bfe-96d0-428e-8b0a-7ae5fb0786b7")
 		)
 		(instances
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C38")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -7064,7 +7131,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0805"
 			(at 81.5848 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7086,7 +7153,7 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
+		(property "Description" "47n,16V"
 			(at 82.55 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7145,7 +7212,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eLED:0805_pol"
 			(at 100.33 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -7393,7 +7460,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 93.0148 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7415,7 +7482,7 @@
 				)
 			)
 		)
-		(property "Description" "47n,50V"
+		(property "Description" "100n,16V"
 			(at 93.98 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -7436,168 +7503,6 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
 					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 120.65 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f4c679ef-a0ad-4263-a48a-e322e31989bd")
-		(property "Reference" "C26"
-			(at 118.364 58.42 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 118.364 62.992 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.6848 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 120.65 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 120.65 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "52de8ff3-1740-465e-984e-dd4736a6ba0e")
-		)
-		(pin "2"
-			(uuid "ef8ea119-849a-46cb-bcfc-8f2e0548cc10")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 62.23 86.36 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f54403c1-a3c3-4cc5-a22e-78d08f4bff90")
-		(property "Reference" "C36"
-			(at 59.944 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 59.944 88.392 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 61.2648 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "47n,50V"
-			(at 62.23 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ac2fa4f-5c0a-4130-aefd-de8416b71010")
-		)
-		(pin "2"
-			(uuid "3d3eefd4-071f-445f-a8bb-32eb86e3d9b3")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
-					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -7625,7 +7530,7 @@
 				)
 			)
 		)
-		(property "Value" "8Mhz"
+		(property "Value" "12Mhz"
 			(at 83.82 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7635,7 +7540,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCrystal:Crystal_SMD_ECX-32_Series_4Pin_3.2x2.5mm"
 			(at 83.82 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7646,7 +7551,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.it/datasheet/3/184/1/abm8.pdf"
 			(at 83.82 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7657,7 +7562,7 @@
 				)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+		(property "Description" "ABM8-12.000MHZ-12-B1U-T"
 			(at 83.82 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7862,6 +7767,87 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 102.87 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ff158805-59e4-470d-afe2-3aad482ee141")
+		(property "Reference" "C37"
+			(at 100.584 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 100.584 62.992 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eCapacitor:0402"
+			(at 101.9048 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 102.87 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100n,16V"
+			(at 102.87 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf18ee12-a71a-49d5-ba21-930893b46778")
+		)
+		(pin "2"
+			(uuid "0d08c5fe-d3f5-4e79-8efc-515eb6776b73")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/d17cc26d-f1b1-46fa-8496-c55b233ba822"
+					(reference "C37")
 					(unit 1)
 				)
 			)

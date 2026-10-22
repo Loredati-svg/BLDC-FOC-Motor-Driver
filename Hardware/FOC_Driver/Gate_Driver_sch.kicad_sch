@@ -2105,6 +2105,17 @@
 		)
 		(uuid "0e03dd85-e69f-4d66-af32-4e2581cbfb3a")
 	)
+	(text "3.3V, 30mA"
+		(exclude_from_sim no)
+		(at 162.814 122.174 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 194 0 0 1)
+			)
+		)
+		(uuid "27de34e0-3a76-44f7-ab0f-349390bed01e")
+	)
 	(text "VDS\n"
 		(exclude_from_sim no)
 		(at 199.39 73.66 0)
@@ -2218,6 +2229,12 @@
 		(uuid "30353097-bdca-4b22-848d-88424fd99da9")
 	)
 	(junction
+		(at 153.67 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "446b7883-eb1f-408d-ab47-54f4fd5694ce")
+	)
+	(junction
 		(at 153.67 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2306,10 +2323,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8772a76-8809-4e10-a909-f8a7a9f08659")
-	)
-	(no_connect
-		(at 129.54 138.43)
-		(uuid "0dad12fe-955c-4b13-890b-53ab727cb4d8")
 	)
 	(wire
 		(pts
@@ -2643,6 +2656,26 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 64.77) (xy 93.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43091950-fa21-4e1a-80ed-8d3b3b797972")
+	)
+	(wire
+		(pts
+			(xy 129.54 138.43) (xy 133.35 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4357377c-6005-4e53-b8eb-c7a711f2429f")
+	)
+	(wire
+		(pts
 			(xy 77.47 111.76) (xy 77.47 113.03)
 		)
 		(stroke
@@ -2770,6 +2803,16 @@
 			(type default)
 		)
 		(uuid "5e61284f-30a9-4e73-a3d5-6fba96838e7a")
+	)
+	(wire
+		(pts
+			(xy 140.97 138.43) (xy 153.67 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f517d8b-34c2-4a0a-b947-4c3a30947b33")
 	)
 	(wire
 		(pts
@@ -3103,7 +3146,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 125.73) (xy 149.86 128.27)
+			(xy 146.05 125.73) (xy 146.05 128.27)
 		)
 		(stroke
 			(width 0)
@@ -3163,7 +3206,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 142.24) (xy 153.67 147.32)
+			(xy 153.67 134.62) (xy 153.67 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3323,16 +3366,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 64.77) (xy 93.98 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6a47aa0-01fa-433e-80ad-8479cb806a8d")
-	)
-	(wire
-		(pts
 			(xy 254 132.08) (xy 254 134.62)
 		)
 		(stroke
@@ -3403,7 +3436,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 125.73) (xy 149.86 125.73)
+			(xy 153.67 138.43) (xy 153.67 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f84c8d50-466b-45f8-ad7e-53888fa9f340")
+	)
+	(wire
+		(pts
+			(xy 129.54 125.73) (xy 146.05 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5553,7 +5596,7 @@
 		(uuid "5b04fd46-6fb5-4b50-8ee3-39e837eebcc9")
 	)
 	(label "DVDD"
-		(at 146.05 123.19 0)
+		(at 137.16 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5611,6 +5654,16 @@
 			(justify left bottom)
 		)
 		(uuid "d080b579-9dc1-47b6-b1b2-c99f3996e9d4")
+	)
+	(label "VBAT(+)"
+		(at 93.98 64.77 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e56e18e1-1c68-45d8-afee-57bee4ea8ede")
 	)
 	(hierarchical_label "SHB"
 		(shape bidirectional)
@@ -5876,17 +5929,6 @@
 		)
 		(uuid "f1a82152-92f6-4462-8999-ea58e9af7297")
 	)
-	(hierarchical_label "VBAT(+)"
-		(shape bidirectional)
-		(at 93.98 64.77 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f424413b-8329-432b-8cca-9497df4f4bef")
-	)
 	(hierarchical_label "INHC"
 		(shape input)
 		(at 78.74 144.78 180)
@@ -5921,6 +5963,87 @@
 		(uuid "fdf6a71d-9710-4151-87de-4c61134521f4")
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 137.16 138.43 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0095644b-68ae-41c6-90f3-72ef74172dce")
+		(property "Reference" "R28"
+			(at 138.938 136.144 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 139.954 140.97 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "eResistor:0402"
+			(at 137.16 140.208 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "396228ce-f4ff-4bce-baee-2d68fb675d91")
+		)
+		(pin "1"
+			(uuid "57ab6621-4249-4d8a-8aa4-779338c58a8b")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/acd2d756-a5c8-49b7-a17f-f63fae77db1e"
+					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 83.82 74.93 180)
 		(unit 1)
@@ -5953,7 +6076,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:1206"
 			(at 82.8548 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -6034,7 +6157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:1210"
 			(at 44.1452 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -6239,7 +6362,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 128.27 0)
+		(at 146.05 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6250,7 +6373,7 @@
 		(fields_autoplaced yes)
 		(uuid "33e60ac7-d2a2-43b4-b88a-72d8f639c141")
 		(property "Reference" "#PWR047"
-			(at 149.86 134.62 0)
+			(at 146.05 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6261,7 +6384,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 133.35 0)
+			(at 146.05 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6271,7 +6394,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 128.27 0)
+			(at 146.05 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6282,7 +6405,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 128.27 0)
+			(at 146.05 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6293,7 +6416,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 128.27 0)
+			(at 146.05 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,7 +6549,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0603"
 			(at 51.7652 135.89 0)
 			(hide yes)
 			(show_name no)
@@ -6585,7 +6708,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 154.6352 154.94 0)
 			(hide yes)
 			(show_name no)
@@ -6607,7 +6730,7 @@
 				)
 			)
 		)
-		(property "Description" "100n,50V"
+		(property "Description" "1u,10V"
 			(at 153.67 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -7106,7 +7229,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 66.802 83.82 90)
 			(hide yes)
 			(show_name no)
@@ -7128,7 +7251,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1%"
 			(at 68.58 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -7241,7 +7364,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "809ce55a-7f37-450e-9dfa-79bec922aae2")
 		(property "Reference" "R12"
 			(at 259.334 124.968 0)
@@ -7322,7 +7445,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "813962ce-c4af-401e-801b-0b725afe85c7")
 		(property "Reference" "R9"
 			(at 217.678 124.968 0)
@@ -7427,7 +7550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:1206"
 			(at 60.6552 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7508,7 +7631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0603"
 			(at 76.5048 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7667,7 +7790,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 215.138 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -7747,7 +7870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
 			(at 85.09 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7769,7 +7892,7 @@
 				)
 			)
 		)
-		(property "Description" "Isat >1,7A"
+		(property "Description" "Bourns SRN6045TA, Isat >1,7A"
 			(at 85.09 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -7828,7 +7951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 65.532 139.7 90)
 			(hide yes)
 			(show_name no)
@@ -8068,7 +8191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 66.802 95.25 90)
 			(hide yes)
 			(show_name no)
@@ -8090,7 +8213,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "1%"
 			(at 68.58 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -8305,7 +8428,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0402"
 			(at 112.522 67.31 90)
 			(hide yes)
 			(show_name no)
@@ -8362,7 +8485,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d7daf9a3-3d1f-4452-8636-2e2477b92142")
 		(property "Reference" "R10"
 			(at 239.014 124.968 0)
@@ -8622,7 +8745,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 166.0652 133.35 0)
 			(hide yes)
 			(show_name no)
@@ -8703,7 +8826,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eResistor:0603"
 			(at 255.778 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -8940,7 +9063,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0603"
 			(at 76.5048 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -8990,7 +9113,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 153.67 142.24 0)
+		(at 153.67 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9000,7 +9123,7 @@
 		(dnp no)
 		(uuid "f8b1e70c-0336-4444-b24a-feef7564a745")
 		(property "Reference" "#PWR037"
-			(at 153.67 146.05 0)
+			(at 153.67 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9011,7 +9134,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 153.416 138.43 0)
+			(at 153.162 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9021,7 +9144,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 142.24 0)
+			(at 153.67 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9032,7 +9155,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 142.24 0)
+			(at 153.67 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9043,7 +9166,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 153.67 142.24 0)
+			(at 153.67 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9098,7 +9221,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "eCapacitor:0402"
 			(at 105.7148 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -9120,7 +9243,7 @@
 				)
 			)
 		)
-		(property "Description" "100n,50V"
+		(property "Description" "100n,16V"
 			(at 106.68 69.85 0)
 			(hide yes)
 			(show_name no)

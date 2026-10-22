@@ -1710,6 +1710,26 @@
 		)
 		(uuid "fe723bf9-8c41-48f4-a7f4-5b1bd25d857e")
 	)
+	(label "VBAT(+)"
+		(at 138.43 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6303f74c-915d-4142-9b74-916e0029f798")
+	)
+	(label "VBAT(+)"
+		(at 208.28 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c8c13c2-0146-4114-82e8-d21cff2fdf85")
+	)
 	(hierarchical_label "GHA"
 		(shape input)
 		(at 54.61 77.47 180)
@@ -1754,17 +1774,6 @@
 		)
 		(uuid "17da75f8-2e59-48b1-8af7-d5a752f77fa3")
 	)
-	(hierarchical_label "VBAT(+)"
-		(shape bidirectional)
-		(at 138.43 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1811848d-bc5e-489e-b3db-f7070328cad8")
-	)
 	(hierarchical_label "SHB"
 		(shape bidirectional)
 		(at 125.73 90.17 180)
@@ -1797,17 +1806,6 @@
 			(justify left)
 		)
 		(uuid "2e3069b7-2e66-4ec5-a13d-119c3d0b7a07")
-	)
-	(hierarchical_label "VBAT(+)"
-		(shape bidirectional)
-		(at 208.28 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "380d3dd6-748e-4176-a294-783dcc742c3b")
 	)
 	(hierarchical_label "GLC"
 		(shape input)

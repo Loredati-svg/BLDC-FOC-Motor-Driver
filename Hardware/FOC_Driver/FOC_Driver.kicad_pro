@@ -454,7 +454,7 @@
         "uuid": "56350f0b-fa2d-4452-8705-62cde497823d"
       }
     ],
-    "used_designators": "U1-4,IC1,R1-27,J1-8,D1-5,#PWR1-73,Q1-9,C1-38,F1,L1-2,Y1,FB1",
+    "used_designators": "U1-4,IC1,#FLG1-3,R1-28,J1-8,D1-5,#PWR1-73,Q1-9,C1-41,F1,L1-2,Y1,FB1",
     "variants": []
   },
   "sheets": [
@@ -480,7 +480,7 @@
     ],
     [
       "cc8b6d76-fa7a-4ba1-95c2-77ba19bd36e8",
-      "LDO"
+      "LDO + Encoder"
     ]
   ],
   "text_variables": {},
