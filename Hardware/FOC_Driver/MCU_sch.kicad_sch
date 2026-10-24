@@ -3953,7 +3953,7 @@
 		)
 		(uuid "ff1091b1-d533-485b-8e82-12ea81aee005")
 	)
-	(hierarchical_label "INLC"
+	(hierarchical_label "INLA"
 		(shape output)
 		(at 125.73 148.59 180)
 		(effects
@@ -3986,7 +3986,7 @@
 		)
 		(uuid "149ace43-3e67-4aed-b05e-aeae0bfc6e0d")
 	)
-	(hierarchical_label "INHC"
+	(hierarchical_label "INHA"
 		(shape input)
 		(at 171.45 97.79 0)
 		(effects
@@ -4074,7 +4074,7 @@
 		)
 		(uuid "6d986b94-ad08-4bbf-b2c2-ce20256bc56d")
 	)
-	(hierarchical_label "INLA"
+	(hierarchical_label "INLC"
 		(shape output)
 		(at 125.73 143.51 180)
 		(effects
@@ -4184,8 +4184,8 @@
 		)
 		(uuid "e30d1883-4627-4c79-adc8-a5bfda937bfd")
 	)
-	(hierarchical_label "INHA"
-		(shape output)
+	(hierarchical_label "INHC"
+		(shape input)
 		(at 171.45 92.71 0)
 		(effects
 			(font

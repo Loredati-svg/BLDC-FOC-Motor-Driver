@@ -3610,7 +3610,7 @@
 				(justify right)
 			)
 		)
-		(pin "INHA" output
+		(pin "INHA" input
 			(at 143.51 57.15 0)
 			(uuid "0c0e456b-1410-4d39-9d97-a2ee4c9c40b6")
 			(effects
