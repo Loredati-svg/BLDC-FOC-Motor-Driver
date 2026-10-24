@@ -13,6 +13,13 @@ It is the motor-control building block for a two-wheeled self-balancing robot, a
 
 Rev A is a **test board**: the motor is screwed to the centre of the PCB, with the magnetic encoder sitting right under the motor shaft.
 
+<p align="center">
+  <img width="500" alt="Top view" src="Images/3D_Top.png" />
+  <img width="500" alt="Top view v2" src="Images/3D_Top_v2.png" />
+</p>
+
+
+
 ## Key specs
 
 | | |
