@@ -300,204 +300,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Shunt"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Shunt"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Shunt resistor with Kelvin connections"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res shunt resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*Shunt*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Shunt_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Shunt_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 2.54 180)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -2.54 180)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_FET:CSD18540Q5B"
 			(pin_names
 				(offset 0)
@@ -851,6 +653,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "eResistor:R_shunt"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "50m"
+				(at 0 4.318 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "eResistor:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "${KIPRJMOD}/../KiCad_Libs/eResistor/datasheet/WSK2512.pdf"
+				(at 2.032 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R_Shunt_Vishay_WSK2512"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_shunt_0_1"
+				(rectangle
+					(start -1.016 0)
+					(end 1.016 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -5.08) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_shunt_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 180)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1062,16 +1047,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 120.65) (xy 140.97 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13581c6d-dc9a-4f83-8877-2bf42f3d7fae")
-	)
-	(wire
-		(pts
 			(xy 60.96 88.9) (xy 73.66 88.9)
 		)
 		(stroke
@@ -1192,16 +1167,6 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 115.57) (xy 140.97 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46e5c5c7-960b-4f03-8f4c-7d198d427147")
-	)
-	(wire
-		(pts
 			(xy 154.94 66.04) (xy 154.94 64.77)
 		)
 		(stroke
@@ -1262,6 +1227,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 123.19) (xy 208.28 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "619d79c1-a439-4e88-8ea0-c1e8b678e196")
+	)
+	(wire
+		(pts
 			(xy 214.63 66.04) (xy 214.63 64.77)
 		)
 		(stroke
@@ -1319,6 +1294,16 @@
 			(type default)
 		)
 		(uuid "78c07da1-2c0e-4629-a83d-a055f217d4b4")
+	)
+	(wire
+		(pts
+			(xy 210.82 115.57) (xy 218.44 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dfd016f-2dbc-4da0-b1c2-5f749d4738c7")
 	)
 	(wire
 		(pts
@@ -1392,6 +1377,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 115.57) (xy 148.59 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95eaabc4-fab6-48c0-a802-a03ac7b4d3ed")
+	)
+	(wire
+		(pts
+			(xy 210.82 120.65) (xy 218.44 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95ef9018-13e6-4115-aae4-eb9f6752b6e4")
+	)
+	(wire
+		(pts
 			(xy 100.33 66.04) (xy 100.33 64.77)
 		)
 		(stroke
@@ -1399,6 +1404,16 @@
 			(type default)
 		)
 		(uuid "98481e82-07a2-4a3b-be7a-0aa5051c4d13")
+	)
+	(wire
+		(pts
+			(xy 140.97 120.65) (xy 148.59 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98510cb6-4d88-4af7-96a6-9fdd84503e92")
 	)
 	(wire
 		(pts
@@ -1492,16 +1507,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 115.57) (xy 210.82 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf522f60-b392-4dbc-b212-85ce20ba4d68")
-	)
-	(wire
-		(pts
 			(xy 119.38 101.6) (xy 121.92 101.6)
 		)
 		(stroke
@@ -1592,16 +1597,6 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 120.65) (xy 210.82 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db8f1cef-3f90-44c6-817a-aa8b2592f23f")
-	)
-	(wire
-		(pts
 			(xy 80.01 54.61) (xy 90.17 54.61)
 		)
 		(stroke
@@ -1609,16 +1604,6 @@
 			(type default)
 		)
 		(uuid "ddc77897-9316-4420-846a-4b841b7828e7")
-	)
-	(wire
-		(pts
-			(xy 208.28 128.27) (xy 208.28 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df0f9ad6-9e33-4181-a281-92e50d0033e1")
 	)
 	(wire
 		(pts
@@ -2222,93 +2207,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Shunt")
-		(at 73.66 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "14ddfe30-a0ff-410e-aeb6-2b0e03f2c9c8")
-		(property "Reference" "R3"
-			(at 71.12 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "50m"
-			(at 71.12 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
-			(at 71.882 118.11 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "R_shunt, 4 terminals"
-			(at 73.66 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8d299f88-e271-46ef-9f9c-5fdce234eacf")
-		)
-		(pin "3"
-			(uuid "143274c9-bdcb-42b2-bc1b-5585fe3f3b07")
-		)
-		(pin "1"
-			(uuid "4a152e5f-d39d-4b95-b2d5-46ae6e3787e8")
-		)
-		(pin "4"
-			(uuid "5d610544-5056-497c-972c-50b6af04bdcc")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 80.01 60.96 0)
 		(unit 1)
@@ -2780,6 +2678,94 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
 					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "eResistor:R_shunt")
+		(at 73.66 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3449b8a1-c87f-4ece-b593-7f46be98a55d")
+		(property "Reference" "R3"
+			(at 71.12 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50m"
+			(at 71.12 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "eResistor:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+			(at 73.66 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/../KiCad_Libs/eResistor/datasheet/WSK2512.pdf"
+			(at 75.692 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2e721407-a0c0-4caf-8da3-7687c43c2feb")
+		)
+		(pin "4"
+			(uuid "eda51b9b-2795-44be-9af6-b91ba6bafd1f")
+		)
+		(pin "3"
+			(uuid "bddbca7d-3c5b-4629-bb32-e3bfe3b16722")
+		)
+		(pin "1"
+			(uuid "69031b2e-52f2-4fe0-8e8c-c696567fa438")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -3389,93 +3375,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Shunt")
-		(at 138.43 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "55cefd0a-4dde-4717-9cfe-91ec4ad1c65f")
-		(property "Reference" "R14"
-			(at 135.89 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "50m"
-			(at 135.89 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
-			(at 136.652 118.11 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 138.43 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "R_shunt, 4 terminals"
-			(at 138.43 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "980d9d83-0fe1-402b-bfed-d8e0451b9046")
-		)
-		(pin "3"
-			(uuid "40dc9b8d-82c7-4cc3-8cdb-9d9bae42c400")
-		)
-		(pin "1"
-			(uuid "72e74841-87be-4322-a776-c0fa5ce806e0")
-		)
-		(pin "4"
-			(uuid "8f19e86a-5a46-4f39-9c10-2c00e15e07cf")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 73.66 128.27 0)
 		(unit 1)
@@ -3707,6 +3606,94 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
 					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "eResistor:R_shunt")
+		(at 138.43 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "707268b3-9cd9-4016-9f0e-2490fd8a0f1c")
+		(property "Reference" "R14"
+			(at 135.89 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50m"
+			(at 135.89 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "eResistor:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+			(at 138.43 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/../KiCad_Libs/eResistor/datasheet/WSK2512.pdf"
+			(at 140.462 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "99bf185f-000a-4dd8-a1a8-aee73c83bb6d")
+		)
+		(pin "4"
+			(uuid "18db2d0f-41a1-4b01-8ae3-7118b82e77c8")
+		)
+		(pin "3"
+			(uuid "09929a1a-1f5b-4017-909c-d8c2ab80f578")
+		)
+		(pin "1"
+			(uuid "a86dd42c-4c6f-4d87-8510-2f1052cb0e30")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -4131,6 +4118,94 @@
 		)
 	)
 	(symbol
+		(lib_id "eResistor:R_shunt")
+		(at 208.28 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2002515-bfe4-492e-b7e9-ba8cce66a092")
+		(property "Reference" "R15"
+			(at 205.74 116.8399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "50m"
+			(at 205.74 119.3799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "eResistor:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
+			(at 208.28 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "${KIPRJMOD}/../KiCad_Libs/eResistor/datasheet/WSK2512.pdf"
+			(at 210.312 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "402584d5-cad4-497a-b534-b8f2d5aa9828")
+		)
+		(pin "4"
+			(uuid "520ae7db-28e3-4c8c-b8c9-79cec52fac0f")
+		)
+		(pin "3"
+			(uuid "5921decf-7c66-4724-9a33-35413b29a71a")
+		)
+		(pin "1"
+			(uuid "f4f052e7-c683-4230-8136-ded1b54a208a")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 66.04 0)
 		(unit 1)
@@ -4203,93 +4278,6 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
 					(reference "#PWR052")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Shunt")
-		(at 208.28 118.11 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cde39c0d-e81c-4204-90d2-709a69b4054f")
-		(property "Reference" "R15"
-			(at 205.74 116.8399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "50m"
-			(at 205.74 119.3799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_Shunt_Vishay_WSK2512_6332Metric_T1.19mm"
-			(at 206.502 118.11 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "R_shunt, 4 terminals"
-			(at 208.28 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "149e3993-676e-47a7-93c9-f6cdc86dcfac")
-		)
-		(pin "3"
-			(uuid "d4f3d5e6-c364-43db-9c86-e646bda21366")
-		)
-		(pin "1"
-			(uuid "42e4e90b-cd54-4da1-8919-260297690eac")
-		)
-		(pin "4"
-			(uuid "681777fb-9948-4f1c-8240-c37b3c0c099f")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/bc6711a0-4b18-459e-9c08-12d55c4dc859"
-					(reference "R15")
 					(unit 1)
 				)
 			)

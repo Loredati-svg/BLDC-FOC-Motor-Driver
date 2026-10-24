@@ -2229,16 +2229,10 @@
 		(uuid "30353097-bdca-4b22-848d-88424fd99da9")
 	)
 	(junction
-		(at 153.67 138.43)
+		(at 158.75 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "446b7883-eb1f-408d-ab47-54f4fd5694ce")
-	)
-	(junction
-		(at 153.67 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "582e3b2b-1ae6-47b6-a516-01169ed7a48a")
+		(uuid "565be24e-67bd-4f5f-88da-074e8426711f")
 	)
 	(junction
 		(at 106.68 55.88)
@@ -2516,6 +2510,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 151.13) (xy 158.75 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e6042f-b7b2-44e8-b7c6-9c5284adaa75")
+	)
+	(wire
+		(pts
 			(xy 77.47 125.73) (xy 81.28 125.73)
 		)
 		(stroke
@@ -2786,16 +2790,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 158.75) (xy 153.67 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5985a6af-d1fa-41f2-876c-8ffd270804ad")
-	)
-	(wire
-		(pts
 			(xy 83.82 128.27) (xy 81.28 128.27)
 		)
 		(stroke
@@ -2803,16 +2797,6 @@
 			(type default)
 		)
 		(uuid "5e61284f-30a9-4e73-a3d5-6fba96838e7a")
-	)
-	(wire
-		(pts
-			(xy 140.97 138.43) (xy 153.67 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f517d8b-34c2-4a0a-b947-4c3a30947b33")
 	)
 	(wire
 		(pts
@@ -2893,6 +2877,16 @@
 			(type default)
 		)
 		(uuid "6750d1e3-1774-43d1-ac4a-128a20562c15")
+	)
+	(wire
+		(pts
+			(xy 158.75 139.7) (xy 158.75 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cd53ca2-1d09-492d-8cc5-8ddcaba997b0")
 	)
 	(wire
 		(pts
@@ -2983,6 +2977,16 @@
 			(type default)
 		)
 		(uuid "82075907-2b5c-4a5f-9b2b-ad29d8c66a54")
+	)
+	(wire
+		(pts
+			(xy 140.97 138.43) (xy 146.05 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8469e26e-bde5-4cc4-b9f4-8f2f25d5bbcd")
 	)
 	(wire
 		(pts
@@ -3206,16 +3210,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 134.62) (xy 153.67 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b82bea33-0da6-404c-8462-0d57cf7301a7")
-	)
-	(wire
-		(pts
 			(xy 77.47 124.46) (xy 77.47 125.73)
 		)
 		(stroke
@@ -3326,7 +3320,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 143.51) (xy 153.67 143.51)
+			(xy 129.54 143.51) (xy 158.75 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3433,16 +3427,6 @@
 			(type default)
 		)
 		(uuid "f8196da6-b47b-4cec-b0e8-bdc2e7f961ec")
-	)
-	(wire
-		(pts
-			(xy 153.67 138.43) (xy 153.67 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f84c8d50-466b-45f8-ad7e-53888fa9f340")
 	)
 	(wire
 		(pts
@@ -5625,6 +5609,16 @@
 		)
 		(uuid "9561451b-dedc-4e78-b2b9-b41f45e8a904")
 	)
+	(label "VBAT(+)"
+		(at 146.05 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa7693e9-ed35-4458-b6f4-061f5a5087f2")
+	)
 	(label "VDS"
 		(at 224.79 132.08 180)
 		(effects
@@ -6677,7 +6671,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 153.67 151.13 0)
+		(at 158.75 147.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6687,7 +6681,7 @@
 		(dnp no)
 		(uuid "5d78e909-cda3-410d-b3f3-15cf4d445e88")
 		(property "Reference" "C16"
-			(at 153.924 149.098 0)
+			(at 159.004 145.288 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6698,7 +6692,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 154.686 153.416 0)
+			(at 159.766 149.606 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6709,7 +6703,7 @@
 			)
 		)
 		(property "Footprint" "eCapacitor:0402"
-			(at 154.6352 154.94 0)
+			(at 159.7152 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6720,7 +6714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 151.13 0)
+			(at 158.75 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6731,7 +6725,7 @@
 			)
 		)
 		(property "Description" "1u,10V"
-			(at 153.67 151.13 0)
+			(at 158.75 147.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7388,7 +7382,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 255.778 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -7469,7 +7463,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 215.138 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -7681,7 +7675,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 153.67 158.75 0)
+		(at 158.75 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7692,7 +7686,7 @@
 		(fields_autoplaced yes)
 		(uuid "8def7b5b-4704-4d98-a1a3-1b77fb604b4b")
 		(property "Reference" "#PWR036"
-			(at 153.67 165.1 0)
+			(at 158.75 163.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7703,7 +7697,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 153.67 163.83 0)
+			(at 158.75 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7713,7 +7707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 158.75 0)
+			(at 158.75 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7724,7 +7718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 158.75 0)
+			(at 158.75 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7735,7 +7729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 158.75 0)
+			(at 158.75 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7790,7 +7784,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 215.138 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -8032,7 +8026,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 235.458 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -8509,7 +8503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 235.458 124.46 90)
 			(hide yes)
 			(show_name no)
@@ -8826,7 +8820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "eResistor:0603"
+		(property "Footprint" "eResistor:0402"
 			(at 255.778 138.43 90)
 			(hide yes)
 			(show_name no)
@@ -8947,6 +8941,83 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/acd2d756-a5c8-49b7-a17f-f63fae77db1e"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 158.75 139.7 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "edf59f3a-0a80-43db-89d9-7f1d0331f4d2")
+		(property "Reference" "#PWR037"
+			(at 158.75 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 158.242 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 158.75 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53259531-7216-4d34-b1bd-bd4e4589dc8a")
+		)
+		(instances
+			(project "FOC_Driver"
+				(path "/56350f0b-fa2d-4452-8705-62cde497823d/acd2d756-a5c8-49b7-a17f-f63fae77db1e"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -9106,83 +9177,6 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/acd2d756-a5c8-49b7-a17f-f63fae77db1e"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 153.67 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f8b1e70c-0336-4444-b24a-feef7564a745")
-		(property "Reference" "#PWR037"
-			(at 153.67 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 153.162 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 153.67 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 153.67 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "79c0ff8a-a3b2-4dad-86f5-e38de3e8a85d")
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/acd2d756-a5c8-49b7-a17f-f63fae77db1e"
-					(reference "#PWR037")
 					(unit 1)
 				)
 			)

@@ -3979,6 +3979,12 @@
 		(uuid "3d0ee5ee-37a3-475d-abd5-9c915745f45c")
 	)
 	(junction
+		(at 66.04 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54c14cc7-fff0-4916-9d68-cb3991a7318f")
+	)
+	(junction
 		(at 115.57 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4007,12 +4013,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1772ace-505a-496d-845d-1f944786ec50")
-	)
-	(junction
-		(at 66.04 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e7233d16-37a6-45fd-bc77-73c405015e3b")
 	)
 	(junction
 		(at 74.93 132.08)
@@ -4090,6 +4090,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 50.8) (xy 66.04 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "123ecadf-2ab5-42ea-a1f2-0ba49d2b3745")
+	)
+	(wire
+		(pts
 			(xy 87.63 154.94) (xy 87.63 151.13)
 		)
 		(stroke
@@ -4127,16 +4137,6 @@
 			(type default)
 		)
 		(uuid "209ba49c-7263-474a-9307-be83744edcdb")
-	)
-	(wire
-		(pts
-			(xy 57.15 53.34) (xy 54.61 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20ba8a35-2e61-423e-ad93-a834f91fc1d6")
 	)
 	(wire
 		(pts
@@ -4207,6 +4207,16 @@
 			(type default)
 		)
 		(uuid "31e9ec37-329d-4c83-90e4-ebb0a6c2d562")
+	)
+	(wire
+		(pts
+			(xy 54.61 53.34) (xy 57.15 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "363e9f1f-73b9-432f-9658-224cfda35351")
 	)
 	(wire
 		(pts
@@ -4307,16 +4317,6 @@
 			(type default)
 		)
 		(uuid "602ba823-cc0b-4eda-90cc-440b00bff900")
-	)
-	(wire
-		(pts
-			(xy 66.04 50.8) (xy 54.61 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "608ae707-4fb3-4b96-99f9-58a0abf99452")
 	)
 	(wire
 		(pts
@@ -4841,8 +4841,7 @@
 	)
 	(symbol
 		(lib_id "eConnector:XT30PW")
-		(at 48.26 50.8 0)
-		(mirror y)
+		(at 48.26 53.34 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4852,7 +4851,7 @@
 		(dnp no)
 		(uuid "03469ac4-8288-4b5e-b992-880585218781")
 		(property "Reference" "U6"
-			(at 43.18 50.7999 0)
+			(at 43.18 53.3401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4863,7 +4862,7 @@
 			)
 		)
 		(property "Value" "XT30PW"
-			(at 43.18 53.3399 0)
+			(at 43.18 50.8001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4874,7 +4873,7 @@
 			)
 		)
 		(property "Footprint" "eConnector:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
-			(at 48.26 50.8 0)
+			(at 48.26 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4885,7 +4884,7 @@
 			)
 		)
 		(property "Datasheet" "${KIPRJMOD}/../KiCad_Libs/eConnector/datasheet/XT30PW-M.pdf"
-			(at 48.26 41.402 0)
+			(at 48.26 62.738 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4896,7 +4895,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 50.8 0)
+			(at 48.26 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5407,82 +5406,6 @@
 			(project "FOC_Driver"
 				(path "/56350f0b-fa2d-4452-8705-62cde497823d/eb2fd16c-c824-42dc-a584-a92c0d277782"
 					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 240.03 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "290f65b9-a332-4b01-8bc4-97f7d9264c53")
-		(property "Reference" "H4"
-			(at 242.57 30.4799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 242.57 33.0199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad_TopOnly"
-			(at 240.03 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole without connection"
-			(at 240.03 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(instances
-			(project "FOC_Driver"
-				(path "/56350f0b-fa2d-4452-8705-62cde497823d/eb2fd16c-c824-42dc-a584-a92c0d277782"
-					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -7343,7 +7266,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.15sqmm_1x03_P4mm_D0.5mm_OD1.5mm"
+		(property "Footprint" "Connector_Wire:SolderWire-0.5sqmm_1x03_P4.6mm_D0.9mm_OD2.1mm"
 			(at 233.68 88.9 0)
 			(hide yes)
 			(show_name no)
